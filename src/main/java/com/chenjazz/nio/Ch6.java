@@ -1,12 +1,12 @@
 package com.chenjazz.nio;
 
 import org.junit.Test;
-import static com.chenjazz.CommonUtil.getFileName;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.nio.channels.FileChannel;
+
+import static com.chenjazz.CommonUtil.getFileName;
 
 /**
  * @Author Jiazhi
@@ -27,7 +27,7 @@ public class Ch6 {
         RandomAccessFile toFile = new RandomAccessFile(getFileName("nio-to.txt"), "rw");
         FileChannel toChannel = toFile.getChannel();
 
-        toChannel.transferFrom(fromChannel,0,fromChannel.size());
+        toChannel.transferFrom(fromChannel, 0, fromChannel.size());
 
         fromChannel.close();
         toChannel.close();

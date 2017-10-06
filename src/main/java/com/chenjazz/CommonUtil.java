@@ -8,7 +8,7 @@ import java.net.URL;
  */
 public class CommonUtil {
 
-    public static String getFileName(String name){
+    public static String getFileName(String name) {
         URL url = CommonUtil.class.getClassLoader().getResource(name);
         return url.getFile();
     }

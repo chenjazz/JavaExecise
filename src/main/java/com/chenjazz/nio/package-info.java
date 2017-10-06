@@ -20,5 +20,4 @@ package com.chenjazz.nio;
 //12 管道（Pipe）
 
 
-
 // FileChannel不能切换到非阻塞模式。而套接字通道都可以。

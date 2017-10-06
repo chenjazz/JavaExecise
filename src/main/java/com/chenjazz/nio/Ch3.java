@@ -1,15 +1,5 @@
 package com.chenjazz.nio;
 
-import static com.chenjazz.CommonUtil.getFileName;
-
-import com.chenjazz.CommonUtil;
-import org.junit.Test;
-
-import java.io.*;
-import java.net.URL;
-import java.nio.ByteBuffer;
-import java.nio.channels.FileChannel;
-
 /**
  * 通道（Channel）
  */

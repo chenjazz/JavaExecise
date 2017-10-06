@@ -39,10 +39,10 @@ public class AttemptLocking {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        final  AttemptLocking al=new AttemptLocking();
+        final AttemptLocking al = new AttemptLocking();
         al.untimed();
         al.timed();
-        new Thread(){
+        new Thread() {
             {
                 setDaemon(true);
             }

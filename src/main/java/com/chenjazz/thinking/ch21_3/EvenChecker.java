@@ -24,9 +24,9 @@ public class EvenChecker implements Runnable {
             int val = generator.next();
             if (val % 2 != 0) {
 
-                System.out.println(val+" not even");
+                System.out.println(val + " not even");
                 generator.canceled();
-            }else {
+            } else {
 //                System.out.println(val+" is even *");
             }
         }
@@ -34,19 +34,19 @@ public class EvenChecker implements Runnable {
     }
 
 
-    public static void test(IntGenerator gp,int count){
-        System.out.println("Press ctrl+c to exit" );
-        ExecutorService exec= Executors.newCachedThreadPool();
+    public static void test(IntGenerator gp, int count) {
+        System.out.println("Press ctrl+c to exit");
+        ExecutorService exec = Executors.newCachedThreadPool();
         for (int i = 0; i < count; i++) {
-            exec.execute(new EvenChecker(gp,i));
+            exec.execute(new EvenChecker(gp, i));
         }
         exec.shutdown();
     }
 
 
-    public  static void test(IntGenerator gp){
+    public static void test(IntGenerator gp) {
 
-        test(gp,10);
+        test(gp, 10);
     }
 
 }
