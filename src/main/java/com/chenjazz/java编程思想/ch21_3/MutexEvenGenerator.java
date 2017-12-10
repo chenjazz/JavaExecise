@@ -1,4 +1,4 @@
-package com.chenjazz.thinking.ch21_3;
+package com.chenjazz.java编程思想.ch21_3;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
