@@ -10,10 +10,10 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
  */
 public class EchoServer {
     public static void main(String[] args) {
-        ServerBootstrap serverBootstrap=new ServerBootstrap();
-        serverBootstrap.group(new NioEventLoopGroup())
-                .channel(NioServerSocketChannel.class)
-                .localAddress(9899)
-                .childHandler()
+//        ServerBootstrap serverBootstrap=new ServerBootstrap();
+//        serverBootstrap.group(new NioEventLoopGroup())
+//                .channel(NioServerSocketChannel.class)
+//                .localAddress(9899)
+//                .childHandler()
     }
 }

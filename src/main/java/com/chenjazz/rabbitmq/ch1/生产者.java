@@ -12,7 +12,7 @@ public class 生产者 {
 
     public static void main(String[] args) throws IOException, TimeoutException {
         ConnectionFactory factory = new ConnectionFactory();
-        factory.setHost("192.168.0.83");
+        factory.setHost("192.168.0.98");
 
         Connection connection = factory.newConnection();
 
@@ -21,6 +21,7 @@ public class 生产者 {
         channel.queueDeclare(QUEUE_NAME, false, false, false, null);
 
         channel.basicPublish("", QUEUE_NAME, null, "hello world".getBytes("utf-8"));
+
         channel.close();
         connection.close();
     }
